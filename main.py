@@ -70,8 +70,8 @@ if __name__ == "__main__":
     hash_file = input("[?] Enter path to hash file: ").strip()
     wordlist_path = input("[?] Enter path to wordlist (Press ENTER for rockyou.txt): ").strip()
     
-    if wordlist_path == "":
-        wordlist_path = "/usr/share/wordlists/rockyou.txt"
+   if wordlist_path == "":
+    wordlist_path = "/usr/share/wordlists/crackstation.txt"
 
     hashes = load_hashes(hash_file)
     results = crack_hashes(hashes, wordlist_path)
